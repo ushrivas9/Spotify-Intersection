@@ -2,6 +2,10 @@
   text-align: center;
 }
 
+.spotifytheme {
+  color: #1aa34a;
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
