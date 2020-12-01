@@ -76,7 +76,7 @@ export default function App(props) {
       <Grid container spacing={3}>
         <Grid item xs={6}>
           <Paper className={classes.paper}>
-            <a href="http://localhost:8888">
+            <a href="http://localhost:8888/login">
               Player1 Login to Spotify Intersection
             </a>
             <div>
@@ -93,14 +93,14 @@ export default function App(props) {
         </Grid>
         <Grid item xs={6}>
           <Paper className={classes.paper}>
-            <a href="http://localhost:8888">
+            <a href="http://localhost:8888/login">
               Player2 Login to Spotify Intersection
             </a>
             <div>
               <button onClick={() => getTopArtists()}>Get My data</button>
             </div>
             <div>
-              {playerData.length === 2 && (
+              {playerData.length > 2 && (
                 <Typography variant="subtitle1" gutterBottom>
                   Have Player2 Data Now
                 </Typography>
